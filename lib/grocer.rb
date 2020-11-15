@@ -27,7 +27,7 @@ def consolidate_cart(cart)
   #   receipt << individual_item
 end 
 receipt
-binding.pry
+#binding.pry
 end 
 
 def countnums(cart)
