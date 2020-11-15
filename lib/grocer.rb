@@ -33,6 +33,8 @@ end
 def countnums(cart)
   cart.map |item|
   item[:item]
+  binding.pry
+end 
 end 
   
 #   countnums_array = []
