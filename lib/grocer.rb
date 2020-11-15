@@ -20,7 +20,6 @@ def consolidate_cart(cart)
   countnum = 0 
   cart.each do |item_info|
     individual_item = find_item_by_name_in_collection(item_info[:item], cart)
-    binding.pry
     individual_item[:count] = countnum(cart, individual_item[:item])
     receipt << individual_item
     #binding.pry
@@ -32,8 +31,11 @@ receipt
 end 
 
 def countnums(cart, item)
-  cart[0][:item]
+  item = ""
+  cart.each do |item_info|
+  item = item_info[:item]
   binding.pry
+end 
 end 
   
 #   countnums_array = []
