@@ -18,9 +18,9 @@ def consolidate_cart(cart)
   item_names = []
   aoh_item_counts = []
   countnum = 0 
-  binding.pry
   cart.each do |item_info|
     individual_item = find_item_by_name_in_collection(item_info[:item], cart)
+    binding.pry
     individual_item[:count] = countnum
     receipt << individual_item
     #binding.pry
