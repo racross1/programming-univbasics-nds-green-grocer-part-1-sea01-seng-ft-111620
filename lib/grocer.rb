@@ -23,9 +23,9 @@ end
 #left off trying to find how to generate countnums 
 def consolidate_cart(cart)
   receipt = []
-  item_names = []
-  aoh_item_counts = []
-  countnum = 0 
+  # item_names = []
+  # aoh_item_counts = []
+  # countnum = 0 
   cart.each do |item_info|
     individual_item = find_item_by_name_in_collection(item_info[:item], cart)
     individual_item[:count] = countnums(cart, individual_item[:item])
@@ -35,7 +35,7 @@ def consolidate_cart(cart)
   #   receipt << individual_item
   #uniq method after countnums added
 end 
-receipt
+receipt = 
 binding.pry
 end 
 
