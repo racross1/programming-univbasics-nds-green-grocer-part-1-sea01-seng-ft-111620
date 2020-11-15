@@ -31,10 +31,12 @@ receipt
 end 
 
 def countnums(cart)
-  cart.map do |item|
-    p item[:item]
+  item_array = []
+  cart.each do |item|
+    item_array << item[:item]
   binding.pry
 end 
+p item_array
 end 
   
 #   countnums_array = []
