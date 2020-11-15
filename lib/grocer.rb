@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     receipt << individual_item
   end 
   receipt = receipt.uniq
-#binding.pry
+  #binding.pry
   return receipt
 end 
 
