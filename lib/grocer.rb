@@ -11,6 +11,12 @@ p result
 #binding.pry
 end
 
+def countnums(cart, item)
+  cart.each do |item_info|
+    item_info[:item]
+  binding.pry
+end 
+end 
 
 #left off trying to find how to generate countnums 
 def consolidate_cart(cart)
@@ -30,13 +36,7 @@ receipt
 #binding.pry
 end 
 
-def countnums(cart, item)
-  item = ""
-  cart.each do |item_info|
-  item = item_info[:item]
-  binding.pry
-end 
-end 
+
   
 #   countnums_array = []
 #   cart.each do |item_info|
