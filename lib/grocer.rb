@@ -7,11 +7,8 @@ def find_item_by_name_in_collection(name, collection)
       result = item_info
     end
   end
-p result
-#binding.pry
+  result
 end
-
-
 
 def consolidate_cart(cart)
   receipt = []
