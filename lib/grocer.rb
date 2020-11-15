@@ -33,10 +33,9 @@ end
 def countnums(cart)
   item_array = []
   cart.each do |item|
-    item_array << item[:item]
+    item[:item]
   binding.pry
 end 
-p item_array
 end 
   
 #   countnums_array = []
