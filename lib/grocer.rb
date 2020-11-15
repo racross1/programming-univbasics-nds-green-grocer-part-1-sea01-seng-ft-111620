@@ -31,11 +31,8 @@ receipt
 end 
 
 def countnums(cart)
-  item_array = []
-  cart.each do |item|
-    item[:item]
+  cart[0][:item]
   binding.pry
-end 
 end 
   
 #   countnums_array = []
