@@ -35,7 +35,8 @@ def consolidate_cart(cart)
   #   receipt << individual_item
   #uniq method after countnums added
 end 
-receipt = 
+receipt = receipt.uniq
+return receipt
 binding.pry
 end 
 
