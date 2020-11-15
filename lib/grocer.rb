@@ -12,10 +12,12 @@ p result
 end
 
 def countnums(cart, item)
+  array_of_names = []
   cart.each do |item_info|
-    p item_info[:item]
-  binding.pry
-end 
+    array_of_names << item_info[:item]
+  end 
+  countnum = array_of_names.count(item)
+  return countnum
 end 
 
 #left off trying to find how to generate countnums 
@@ -26,14 +28,15 @@ def consolidate_cart(cart)
   countnum = 0 
   cart.each do |item_info|
     individual_item = find_item_by_name_in_collection(item_info[:item], cart)
-    individual_item[:count] = countnum(cart, individual_item[:item])
+    individual_item[:count] = countnums(cart, individual_item[:item])
     receipt << individual_item
     #binding.pry
   # if !receipt[individual_item]
   #   receipt << individual_item
+  #uniq method after countnums added
 end 
 receipt
-#binding.pry
+binding.pry
 end 
 
 
