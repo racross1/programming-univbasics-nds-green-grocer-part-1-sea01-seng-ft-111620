@@ -13,7 +13,7 @@ end
 
 def countnums(cart, item)
   cart.each do |item_info|
-    item_info[:item]
+    p item_info[:item]
   binding.pry
 end 
 end 
