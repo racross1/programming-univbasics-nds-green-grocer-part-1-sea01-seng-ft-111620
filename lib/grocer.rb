@@ -13,10 +13,8 @@ end
 
 
 
-#left off trying to find how to generate countnums 
 def consolidate_cart(cart)
   receipt = []
-
   cart.each do |item_info|
     individual_item = find_item_by_name_in_collection(item_info[:item], cart)
     individual_item[:count] = countnums(cart, individual_item[:item])
